@@ -1,0 +1,6 @@
+com\sap\alicloud\hc\SpringBootHANADemo\model\JobExecutionStatus.class
+com\sap\alicloud\hc\SpringBootHANADemo\service\NativeSQLRunner.class
+com\sap\alicloud\hc\SpringBootHANADemo\dao\Database.class
+com\sap\alicloud\hc\SpringBootHANADemo\controller\TestController.class
+com\sap\alicloud\hc\SpringBootHANADemo\dao\NativeSQL.class
+com\sap\alicloud\hc\SpringBootHANADemo\SpringBootHanaDemoApplication.class

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>List</h2>
+	<div>
+		<form action="home.html" th:action="@{/home/create_sql}" method="post">
+			<button>Create</button>
+		</form>
+		<form action="home.html" th:action="@{/home/delete_sql}" method="post">
+			<button th:if="${count} > 0">Delete</button>
+		</form>
+	</div>
+	<div th:if="${count} > 0">
+		<table>
+			<thead>
+				<tr>
+					<th>Job Id</th>
+					<th>Job Name</th>
+					<th>Start Time</th>
+					<th>Status</th>
+					<th>Result</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="table: ${items}">
+					<td th:text="${table.jobId}"></td>
+					<td th:text="${table.jobName}"></td>
+					<td th:text="${table.startTime}"></td>
+					<td th:text="${table.status}"></td>
+					<td th:text="${table.result}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
